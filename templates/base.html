@@ -38,21 +38,21 @@ CIS 218
       <ul class="navbar-nav">
         <li class="nav-item">
           <a 
-            class="nav-link {% if request.get_full_path -- mwagner_url %} active {% endif %}" 
+            class="nav-link active" 
               aria-current="page" href="{% url 'mwagner' %}"
               >
               Introductions
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.get_full_path -- projects_url %} active {% endif %}" 
+          <a class="nav-link active" 
               aria-current="page" href=" {% url 'projects' %}"
               >
               Projects
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.get_full_path -- contact_url %} active {% endif %}" 
+          <a class="nav-link active" 
             href="{% url 'contact' %}"
               >
               Contact
