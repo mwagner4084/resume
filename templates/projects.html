@@ -1,0 +1,98 @@
+{% comment %}
+Marissa Wagner
+CIS 218
+09/22/2022
+{% endcomment %}
+
+{% extends "base.html" %} <!-- extends from base template -->
+
+{% block content %} <!-- overrides base template -->
+<main>
+    {% load static %} <!--load static images-->
+    <div class="bg-warning text-dark bg-opacity-25">
+        <div class="container">
+            <h1 class="text-center">My Projects</h1>
+        </div>
+        
+        <!-- section.my-5>.container>.row>.col-12*2 -->
+        <!-- Grid System -->
+        <section class="py-5"><!-- section gets padding -->
+            <div class="container"><!-- container inside section -->
+                <div class="row align-items-center justify-content-between"><!-- row goes inside container -->
+                    <div class="col-12 col-sm-6 col-lg-7"><!-- column goes inside row -->
+                        <h4>Python Projects</h4>
+                        <ul class="list-unstyled mb-0"><!-- remove bullet points -->
+                            <li>
+                                <a href="https://mwagner4084.github.io/CIS-150/Project-6.html">
+                                    Student Grade Point Report Program
+                                </a>
+                            </li>
+                            <li>A python program that generates a student grade point report.</li>
+                            <li>
+                                <a href="https://mwagner4084.github.io/CIS-150/Project-7.html">
+                                    Rock, Paper, Scissors Program
+                                </a>
+                            </li>
+                            <li>A python program that re-creates the game Rock, Paper, Scissors.</li>
+                            <li>
+                                <a href="https://mwagner4084.github.io/CIS-150/Project-8.html">
+                                    Date Format Program
+                                </a>
+                            </li>
+                            <li>A python program that displays the date format based on the user's input.</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5"><!-- column goes inside row -->
+                        <figure class="figure">
+                            <img src="{% static 'img/oli-page.png' %}" class="figure-img img-fluid rounded"
+                                alt="pet dating profile" width="500">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5"><!-- section gets padding -->
+            <div class="container"><!-- container inside section -->
+                <div class="row align-items-center justify-content-between"><!-- row goes inside container -->
+                    <div class="col-12 col-sm-6 col-lg-7"><!-- column goes inside row -->
+                        <h4>Dreamweaver Projects</h4>
+                        <ul class="list-unstyled mb-0"></ul>
+                            <li>
+                                <a href="https://mwagner4084.github.io/index.html">
+                                    My Homepage
+                                </a>
+                            </li>
+                        <li>An HTML web page with links to projects completed in Dreamweaver.</li>
+                        <li>
+                            <a href="https://mwagner4084.github.io/Project-1/project1.html">
+                                My Resume
+                            </a>
+                        </li>
+                        <li>An HTML web page featuring my resume.</li>
+                        <li>
+                            <a href="https://mwagner4084.github.io/Project-4/index.html">
+                                The Bachelors of House Wagner
+                            </a>
+                        </li>
+                        <li>A website featuring dating profiles for each of my pets.</li>
+                        <li>
+                            <a href="https://mwagner4084.github.io/Project-3/project3.html">
+                                Registration Form
+                            </a>
+                        </li>
+                        <li>An HTML web page featuring a Student Orientation Event Registration form.</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-5"><!-- column goes inside row -->
+                    <figure class="figure">
+                        <img src="{% static 'img/milo-page.png' %}" class="figure-img img-fluid rounded"
+                            alt="pet dating profile" width="500">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock content %}

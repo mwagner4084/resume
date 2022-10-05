@@ -1,0 +1,107 @@
+{% comment %}
+Marissa Wagner
+CIS 218
+09/22/2022
+{% endcomment %}
+
+{% extends "base.html" %} <!-- extends from base template -->
+
+{% block content %} <!-- overrides base template -->
+
+<main>
+  {% load static %} <!--load static images-->
+  <div class="bg-primary p-3 text-dark bg-opacity-25">
+      <div class="container text-center">
+          <h1> </h1> <!-- placed for testing purposes -->
+          <h2>  
+          <img src="{% static 'img/sayhello.jpg' %}" class="img-fluid img-rounded" alt="hello" width="500">
+          </h2>
+      </div>
+      <section class="py=5"><!-- section gets padding -->
+        <div class="container"><!-- container inside section -->
+          <div class="row align-items-center justify-content-between"><!-- row goes inside container -->
+            <div class="col-12 col-sm-6 col-lg-7"><!-- column goes inside row -->
+              <figure>
+                <h1 class="text-decoration-underline">GET IN TOUCH</h1>
+                <br>
+                <h2>Hey, let's work together!</h2>
+                <h5>Contact me to start a project.</h5>
+              </figure>    
+            </div>
+          <div class="col-12 col-sm-6 col-lg-5"><!-- column goes inside row -->
+              <ul class="list-unstyled"> <!-- Bootstrap icons -->            
+                <li class="fw-bold">Location:</li>
+                <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                </svg> 6767 West O Ave Kalamazoo, MI 49009
+              </li>
+              <li class="fw-bold">E-Mail:</li>
+              <li> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                </svg> KVCC: mconnell4084@mail.kvcc.edu
+              </li>
+              <li> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                </svg> WMU: mnf1934@wmich.edu
+              </li>
+            <li> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                </svg> Personal: mgwagner61921@gmail.com
+              </li>
+            <li class="fw-bold">Phone:</li>
+            <li> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-vibrate-fill" viewBox="0 0 16 16">
+                <path d="M4 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4zm5 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0zM1.807 4.734a.5.5 0 1 0-.884-.468A7.967 7.967 0 0 0 0 8c0 1.347.334 2.618.923 3.734a.5.5 0 1 0 .884-.468A6.967 6.967 0 0 1 1 8c0-1.18.292-2.292.807-3.266zm13.27-.468a.5.5 0 0 0-.884.468C14.708 5.708 15 6.819 15 8c0 1.18-.292 2.292-.807 3.266a.5.5 0 0 0 .884.468A7.967 7.967 0 0 0 16 8a7.967 7.967 0 0 0-.923-3.734zM3.34 6.182a.5.5 0 1 0-.93-.364A5.986 5.986 0 0 0 2 8c0 .769.145 1.505.41 2.182a.5.5 0 1 0 .93-.364A4.986 4.986 0 0 1 3 8c0-.642.12-1.255.34-1.818zm10.25-.364a.5.5 0 0 0-.93.364c.22.563.34 1.176.34 1.818 0 .642-.12 1.255-.34 1.818a.5.5 0 0 0 .93.364C13.856 9.505 14 8.769 14 8c0-.769-.145-1.505-.41-2.182z"/>
+                </svg> 269-501-9240
+            </li>
+          </ul>
+        </div>              
+      </div>
+    </div>
+  </section>
+  <section class="py-7">
+    <div class="container"><!-- container inside section -->
+              <form>
+                <!-- Name input -->
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form4Example1" class="form-control" />
+                    <label class="form-label" for="form4Example1">Name</label>
+                  </div>
+                
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form4Example2" class="form-control" />
+                    <label class="form-label" for="form4Example2">Email address</label>
+                  </div>
+                
+                  <!-- Message input -->
+                  <div class="form-outline mb-4">
+                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                    <label class="form-label" for="form4Example3">Message</label>
+                  </div>
+                
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                    <label class="form-check-label" for="form4Example4">
+                      Send me a copy of this message
+                    </label>
+                  </div>
+                
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+                </form>
+              </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+{% endblock content %}

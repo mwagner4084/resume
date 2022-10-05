@@ -1,0 +1,89 @@
+{% comment %}
+Marissa Wagner
+CIS 218
+09/22/2022
+{% endcomment %}
+
+{% extends "base.html" %} <!-- extends from base template -->
+
+{% block content %} <!-- overrides base template -->
+    <main>
+      <div class="text-center">
+        <div class="bg-success p-2 text-dark bg-opacity-25">
+          <div class="container">
+            <h1>Marissa Wagner</h1>
+            <h4 class="fw-light">Student. Activist. Programmer.</h4>
+          </div>
+        {% load static %} <!--load static images-->
+        <section>
+          <div class="container"> <!-- responsive image, limited height -->
+            <img class="img-fluid img-limit-height mb-4" src="{% static 'img/selfie1.jpg' %}" alt="self" width="400" height="800">
+            <img class="img-fluid img-limit-height mb-4" src="{% static 'img/protest.jpg' %}" alt="self" width="400" height="800">
+            <img class="img-fluid img-limit-height mb-4" src="{% static 'img/pr.jpg' %}" alt="self" width="400" height="800">
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <figure>
+                <blockquote class="blockquote">
+                  <p class="lead">"One day there won't be female leaders. There will just be leaders."</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Sheryl Sandberg, <cite title="Source Title">Facebook COO</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section> <!-- Grid System -->
+          <div class="bg-success p-2 text-dark bg-opacity-75">
+            <div class="container"><!-- container inside section -->
+              <div class="row align-items-start justify-content-between"><!-- row goes inside container -->
+                  <div class="col-12 col-sm-6 col-lg-4"><!-- column goes inside row -->
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <h1 class="text-decoration-underline fw-light">
+                          WORK EXPERIENCE
+                        </h1>
+                      </li>
+                      <li>Restaurant/Service Industry - 10 years</li>
+                      <li>Property Management/Leasing - 4 years</li>
+                      <li>Human Resources - 3 years</li>
+                      <li>Sales Industry - 2 years</li>
+                    </ul>
+                  </div>
+                    <div class="col-12 col-sm-6 col-lg-4"><!-- column goes inside row -->
+                      <ul class="list-unstyled mb-0">
+                        <li>
+                          <h1 class="text-decoration-underline fw-light">
+                            EDUCATION
+                          </h1>
+                        </li>
+                        <li>Portage Central High School - Diploma - 2009 </li>
+                        <li>Kalamazoo Valley Community College - AS Computer Science - 2022</li>
+                        <li>Western Michigan University - BS Computer Science - 2024</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4"><!-- column goes inside row -->
+                      <ul class="list-unstyled mb-0">
+                        <li>
+                          <h1 class="text-decoration-underline fw-light">
+                            INTERESTS
+                          </h1>
+                        </li>
+                        <li>Art - Ceramics, Fluid Paint, Collage-making</li>
+                        <li>Music - Learning Instruments, Concert-going</li>
+                        <li>Travel - Road Trips, State Parks, Hiking, Snorkeling</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          
+            
+
+</main>
+{% endblock content %}
+
+
